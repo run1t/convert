@@ -7,14 +7,14 @@ export function convert<FROM, TO>(
       dest: keyof TO;
       map: (src: FROM) => any;
     }>;
-  }
+  },
 ): TO {
   let obj: any = {};
 
   if (rules.copy) {
     obj = rules.copy.reduce(
       (acc, property) => ({ ...acc, [property]: src[property] }),
-      obj
+      obj,
     );
   }
 
@@ -29,7 +29,7 @@ export function convert<FROM, TO>(
   if (rules.map) {
     obj = rules.map.reduce(
       (acc, property) => ({ ...acc, [property.dest]: property.map(src) }),
-      obj
+      obj,
     );
   }
 
