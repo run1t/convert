@@ -1,0 +1,15 @@
+{
+  "name": "@run1t/convert",
+  "version": "1.0.0",
+  "description": "Let's you convert one object to another",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "author": "“Run1t” <“reunanln@gmail.com”>",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^3.3.3"
+  }
+}
