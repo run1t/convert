@@ -4,8 +4,7 @@
     "module": "commonjs",
     "esModuleInterop": true,
     "declaration": true,
-    "outDir": "dist",
-    "types": ["dist/index.d.ts"]
+    "outDir": "./lib"
   },
   "include": ["src/**/*"]
 }
